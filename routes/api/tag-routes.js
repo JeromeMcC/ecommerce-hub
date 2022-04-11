@@ -12,8 +12,8 @@ router.get('/', (req, res) => {
       },
     ],
   })
-    .then((tags) => res.status(500).json(tags))
-    .catch((err) => res.status(200).json(err));
+    .then((tags) => res.status(200).json(tags))
+    .catch((err) => res.status(500).json(err));
   // find all tags
   // be sure to include its associated Product data
 });
